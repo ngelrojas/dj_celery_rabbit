@@ -22,5 +22,5 @@ from rest_framework_jwt.views import obtain_jwt_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('v1/auth/', obtain_jwt_token),
-    path('v1/', include('sendasync.urls'))
+    path('v1/', include('sendasync.urls')),
 ]

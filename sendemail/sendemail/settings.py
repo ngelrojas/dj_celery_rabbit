@@ -27,10 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-BROKER_URL = 'amqp://guest:guest@localhost:5672//'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
 # Application definition
 
 INSTALLED_APPS = [
@@ -141,7 +137,6 @@ JWT_AUTH = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
 EMAIL_HOST = 'ngelrojasp.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
