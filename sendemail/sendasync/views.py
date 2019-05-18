@@ -11,9 +11,9 @@ class UserSendMail(generics.ListAPIView):
         try:
             current_user = request.user
             #
-            # task_send_email(current_user)
-            #
-            task_sum_user(current_user, 4, 5)
+            task_send_email(current_user)
+            # test
+            # task_sum_user(current_user, 4, 5)
 
             return Response({'data': True, 'msg': 'email sent'})
 
